@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBook">
+
+    <EditText
+        android:id="@+id/bookname"
+        android:layout_width="330dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="152dp"
+        android:ems="10"
+        android:hint="book name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/bookprice"
+        android:layout_width="325dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="book price"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/bookname"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bookname"
+        app:layout_constraintTop_toBottomOf="@+id/bookname" />
+
+    <EditText
+        android:id="@+id/bookauthor"
+        android:layout_width="330dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="book author"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/bookprice"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bookprice"
+        app:layout_constraintTop_toBottomOf="@+id/bookprice" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="130dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="68dp"
+        android:text="submit"
+        app:layout_constraintEnd_toEndOf="@+id/bookauthor"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="@+id/bookauthor"
+        app:layout_constraintTop_toBottomOf="@+id/bookauthor" />
+</androidx.constraintlayout.widget.ConstraintLayout>
